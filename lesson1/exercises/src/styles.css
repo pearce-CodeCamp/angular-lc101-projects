@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url("https://blog.wildix.com/wp-content/uploads/2020/06/react-logo.jpg");
+    background-size: 5%;
+}

@@ -1,6 +1,9 @@
 .movies {
     color: cornflowerblue;
     font-size: larger;
+    background-color: brown;
+    padding: 5%;
+    border: royalblue ridge;
 }
 
 h3 {

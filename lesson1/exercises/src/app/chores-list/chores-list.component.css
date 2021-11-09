@@ -1,3 +1,10 @@
 .chores {
     color:darkgoldenrod;
+    background-color: brown;
+    padding: 5%;
+    border: royalblue ridge;
+}
+
+h3 {
+    text-align: center;
 }

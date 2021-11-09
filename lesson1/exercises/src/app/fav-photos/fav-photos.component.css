@@ -3,9 +3,18 @@ h3 {
 }
 
 img {
-   width: 250px;
+   width: 225px;
+   margin: 5%;
+   border-radius: 4%;
+   border: royalblue ridge;
+   border-width: 10px;
+   text-align: center;
 }
 
 .photos {
    text-align: center;
+   border: royalblue ridge;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   background-color: sandybrown;
 }
