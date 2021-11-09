@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavLinksComponent implements OnInit {
 
+  favLinks: string[] = ['education.launchcode.org', 'https://htmlpreview.github.io/?https://raw.githubusercontent.com/HackerPoet/Inspiration/master/Inspiration.htm'];
   constructor() { }
 
   ngOnInit() {
