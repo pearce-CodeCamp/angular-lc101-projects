@@ -5,7 +5,9 @@
         <div class="candidates col-3">
             <h2>Candidates</h2>
             <ol>
-                <li (click)="selected = candidate" *ngFor="let candidate of candidates">{{candidate.name}}</li>
+                <li (click)="selected = candidate" *ngFor="let candidate of candidates">
+                    {{candidate.name}}
+                </li>
             </ol>
         </div>
 
@@ -31,12 +33,15 @@
 
         <div class="crew col-3">
             <h2>Selected Crew</h2>
+            <p>(maximum of 3)</p>
             <ul>
                 <li *ngFor="let member of crew">{{member.name}}</li>
             </ul>
             <!-- Add a "Clear Crew List" button here. -->
             <!-- if the crew array contains, display this button -->
-            <button (click)="crew = []" *ngIf="crew.length > 0">Clear Crew List</button>
+            <button (click)="crew = []" *ngIf="crew.length > 0">
+                Clear Crew List
+            </button>
         </div>
     </div>
     <hr>
@@ -44,7 +49,9 @@
         <button (click)="selected = undefined">Clear Data & Image</button>
         <!-- Add a "Send on Mission" button here. -->
         <!-- invoke the addToCrew function inside the click event -->
-        <button (click)="addToCrew(selected)">Send on Mission</button>
+        <button (click)="addToCrew(selected)" *ngIf="checkSendMissionBtn(selected)">
+            Send on Mission
+        </button>
     </div>
 </div>
 

@@ -29,6 +29,13 @@ export class CandidatesComponent implements OnInit {
     console.log(this.crew);
   }
 
+  checkSendMissionBtn(candidate: object): boolean {
+    const isCandidateDefined = candidate !== undefined;
+    const isCandidateNotInCrew = !this.crew.includes(candidate);
+    const isCrewFull = this.crew.length < 3;
+    return isCandidateDefined && isCandidateNotInCrew && isCrewFull;
+  }
+
   constructor() { }
 
   ngOnInit() {
