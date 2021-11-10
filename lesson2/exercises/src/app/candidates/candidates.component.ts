@@ -17,6 +17,17 @@ export class CandidatesComponent implements OnInit {
   ];
 
   crew = [];
+  // takes a candidate and adds them to the crew array
+  addToCrew(candidate: object) {
+    // if the candidate is not already in the crew array,
+    // then add that candidate into the crew array
+    // if the crew array includes the candidate
+    // don't push the candidate
+    if (!this.crew.includes(candidate)) {
+      this.crew.push(candidate);
+    }
+    console.log(this.crew);
+  }
 
   constructor() { }
 
